@@ -34,9 +34,7 @@ Clone the Github using scripting to fetch the data from the Phonepe pulse Github
 Step 3:
 Data transformation:
 
-In this step the JSON files that are available in the folders are converted into the readeable and understandable DataFrame format by using the for loop and iterating file by file and then finally the DataFrame is created. In order to perform this step I've used os, json and pandas packages. And finally converted the dataframe into CSV file and storing in the local drive.
-path1 = "Path of the JSON files"
-agg_trans_list = os.listdir(path1)
+In this step the JSON files that are available in the folders are converted into the readeable and understandable DataFrame format by using the for loop and iterating file by file and then finally the DataFrame is created. In order to perform this step I've used os, json and pandas packages.
 
 # Give any column names that you want
 columns1 = {'State': [], 'Year': [], 'Quarter': [], 'Transaction_type': [], 'Transaction_count': [],'Transaction_amount': []}
@@ -46,25 +44,9 @@ Database insertion:
 
 To insert the datadrame into SQL first I've created a new database and tables using "mysql-connector-python" library in Python to connect to a MySQL database and insert the transformed data using SQL commands.
 
-Creating the connection between python and mysql
-    mydb = sql.connect(host="localhost",
-               user="username",
-               password="password",
-               database= "phonepe_pulse"
-              )
-    mycursor = mydb.cursor()
-
 Creating tables
    mycursor.execute("create table 'Table name' (col1 varchar(100), col2 int, col3 int, col4 varchar(100), col5 int, col6 double)")
 
-    for i,row in df.iterrows():
-    
-        #here %S means string values 
-        sql = "INSERT INTO agg_trans VALUES (%s,%s,%s,%s,%s,%s)"
-        mycursor.execute(sql, tuple(row))
-        
-        # the connection is not auto committed by default, so we must commit to save our changes
-        mydb.commit()
 
   Step 5:
 Dashboard creation:
