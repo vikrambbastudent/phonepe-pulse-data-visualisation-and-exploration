@@ -1,6 +1,6 @@
 # phonepe-pulse-data-visualisation-and-exploration
 # What is PhonePe Pulse?
-As of my last update in January 2022, PhonePe Pulse is a feature offered by PhonePe, a popular digital payments platform in India. PhonePe Pulse provides users with insights and trends based on transactions made through the PhonePe platform. It offers data-driven analytics and visualizations, allowing users to track their spending habits, view popular merchants, understand market trends, and more.
+PhonePe Pulse is a feature offered by PhonePe, a popular digital payments platform in India. PhonePe Pulse provides users with insights and trends based on transactions made through the PhonePe platform. It offers data-driven analytics and visualizations, allowing users to track their spending habits, view popular merchants, understand market trends, and more.
 
 PhonePe Pulse aims to empower users by providing them with valuable information about their financial transactions and behaviors. By offering insights into their spending patterns and preferences, PhonePe Pulse helps users make informed decisions regarding their finances and budgeting.
 
